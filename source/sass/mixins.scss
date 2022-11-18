@@ -22,12 +22,6 @@
   }
 }
 
-@mixin tablet {
-  @media screen and (min-width: $table-width) {
-    @content;
-  }
-}
-
 @mixin desktop {
   @media screen and (min-width: $desktop-width) {
     @content;

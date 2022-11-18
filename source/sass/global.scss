@@ -11,31 +11,3 @@ html {
 .visually-hidden {
   @include visually-hidden;
 }
-
-.br-index {
-  display: none;
-
-  @include tablet {
-    display: block;
-  }
-}
-
-.br-gifts {
-  display: none;
-
-  @include tablet {
-    display: block;
-  }
-
-  @include desktop {
-    display: none;
-  }
-}
-
-.br-title {
-  display: none;
-
-  @include desktop {
-    display: block;
-  }
-}
