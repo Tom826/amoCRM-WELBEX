@@ -15,8 +15,6 @@ import terser from 'gulp-terser';
 import ghPages from 'gh-pages';
 import path from 'path';
 
-//export const path = require('path');
-
 // Styles
 
 export const styles = () => {
@@ -40,24 +38,24 @@ export const html = () => {
     .pipe(gulp.dest('build'));
 }
 
-/*/ Images
+// Images
 
 export const optimizeImages = () => {
-  return gulp.src('source/img/**//*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 
 
 const copyImages = () => {
-  return gulp.src('source/img/**//*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
 }
 
 //WebP
 
 export const createWebp = () => {
-  return gulp.src('source/img/**//*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
   }))
@@ -67,7 +65,7 @@ export const createWebp = () => {
 //SVG
 
 export const svg = () => {
-  return gulp.src(['source/img/**//*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'))
 }
@@ -80,7 +78,7 @@ export const sprite = () => {
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
-}*/
+}
 
 //Copy
 
@@ -136,25 +134,25 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
-  //optimizeImages,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
-    //svg,
-    //sprite,
-    //createWebp
+    svg,
+    sprite,
+    createWebp
   ),);
 
 export default gulp.series(
   clean,
   copy,
-  //copyImages,
+  copyImages,
   gulp.parallel(
     styles,
     html,
-    //svg,
-    //sprite,
-    //createWebp
+    svg,
+    sprite,
+    createWebp
   ),gulp.series(
     server,
     watcher
