@@ -9,3 +9,41 @@
     display: block;
   }
 }
+
+.cards {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  @include desktop {
+    column-count: 2;
+    column-gap: 30px;
+    width: 300px;
+  }
+}
+
+.cards__wrapper {
+  @include desktop {
+    margin-bottom: 30px;
+  }
+}
+
+.cards__title {
+  @include desktop {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+  }
+}
+
+.cards__caption {
+  @include desktop  {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}

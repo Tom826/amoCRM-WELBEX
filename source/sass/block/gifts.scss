@@ -1,5 +1,11 @@
 .gifts__title {
   margin: 45px 0 20px;
+
+  @include desktop {
+    margin: 16px 0 40px 0;
+    width: 290px;
+    text-align: right;
+  }
 }
 
 .gifts__title-primary {
@@ -17,6 +23,10 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @include desktop {
+    text-transform: uppercase
+  }
 }
 
 .gifts__button {
@@ -24,5 +34,16 @@
 
   @include desktop {
     position: relative;
+    width: 262px;
+    height: 61px;
+    background-color: $background-color-button;
+    color: $text-color-primary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-top: 30px;
   }
 }

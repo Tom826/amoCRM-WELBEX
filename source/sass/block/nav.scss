@@ -1,6 +1,10 @@
 .nav {
   padding: 20px 0;
   font-family: 'Inter', 'Arial', sans-serif;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .nav__list {
@@ -10,10 +14,20 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+
+  @include desktop {
+    gap: 0 16px;
+    justify-content: start;
+  }
 }
 
 .nav__item {
   margin-right: 16px;
+
+  @include desktop {
+    padding: -5px;
+    margin: 0;
+  }
 }
 
 .nav__item:nth-child(3n+4) {
@@ -22,6 +36,10 @@
 
 .nav__item:last-child {
   display: none;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .nav__link {
@@ -31,4 +49,12 @@
   line-height: 15px;
   font-weight: 500;
   text-transform: uppercase;
+
+  @include desktop {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+  }
 }

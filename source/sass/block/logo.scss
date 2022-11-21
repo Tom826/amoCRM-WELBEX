@@ -1,0 +1,17 @@
+.logo {
+  @include desktop {
+    text-decoration: none;
+  }
+}
+
+.logo__caption {
+  @include desktop {
+    width: 140px;
+    margin-top: 10px;
+    font-family:'Montserrat', 'Arial', sans-serif;
+    color: $text-color-primary;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

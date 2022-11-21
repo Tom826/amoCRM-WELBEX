@@ -8,6 +8,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin: 0 0 20px;
+
+  @include desktop {
+    font-size: 14px;
+    line-height:  17px;
+  }
 }
 
 .section__list {
@@ -36,9 +41,33 @@
   &--desktop {
     display: none;
   };
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 19px;
+
+    &--mob {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    };
+  }
 }
 
+.section {
+  @include desktop {
+    &--contacts {
+      text-align: right;
+    }
+  }
+}
 
 .section__copyright {
   margin-top: 50px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+  }
 }

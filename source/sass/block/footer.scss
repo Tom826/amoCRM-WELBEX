@@ -1,5 +1,11 @@
 .footer {
   padding: 45px 16px 0;
+
+  @include desktop {
+    padding: 54px 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__sections {

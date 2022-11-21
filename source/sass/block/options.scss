@@ -9,6 +9,10 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .options__item {

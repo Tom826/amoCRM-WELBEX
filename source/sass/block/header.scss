@@ -1,5 +1,10 @@
 .header {
-  //padding: 0 16px;
+  @include desktop{
+    display: flex;
+    padding: 14px 0 4px;
+    margin: 0 auto;
+    //align-items: flex-start;
+  }
 }
 
 .header__logo {
@@ -7,5 +12,11 @@
 
   @include desktop{
     display: block;
+  }
+}
+
+.header__nav {
+  @include desktop {
+    margin: 0 136px 0 50px;
   }
 }

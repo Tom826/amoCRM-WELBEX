@@ -3,6 +3,13 @@
   line-height: 44px;
   margin: 0;
   font-weight: 400;
+
+  @include desktop {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    width: 362px;
+  }
 }
 
 .hero__colored-title {
@@ -16,6 +23,13 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @include desktop {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+  }
 }
 
 .hero__description {
@@ -26,4 +40,9 @@
   font-size: 18px;
   line-height: 22px;
   margin-top: 14px;
+
+  @include desktop {
+    margin-top: 30px;
+    width: 276px;
+  }
 }

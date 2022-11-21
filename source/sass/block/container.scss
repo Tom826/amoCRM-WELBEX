@@ -7,4 +7,9 @@
   flex-direction: column;
 
   background-color: $background-color-primary;
+
+  @include desktop {
+    max-width: 1440px;
+    padding: 46px 148px 0;
+  }
 }
