@@ -1,0 +1,28 @@
+.gifts__title {
+  margin: 45px 0 20px;
+}
+
+.gifts__title-primary {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.gifts__title-colored {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 175%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gifts__button {
+  @include visually-hidden;
+
+  @include desktop {
+    position: relative;
+  }
+}

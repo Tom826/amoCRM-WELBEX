@@ -1,0 +1,28 @@
+.options {
+  padding: 0;
+  list-style-type: none;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.options__item {
+  margin: 0 10px 14px 26px;
+  position: relative;
+}
+
+.options__item::before {
+  content: "";
+  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  left: -16px;
+  top: 38%;
+  transform: translateY(-50%);
+}

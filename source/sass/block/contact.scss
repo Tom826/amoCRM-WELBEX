@@ -1,0 +1,7 @@
+.contact {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}

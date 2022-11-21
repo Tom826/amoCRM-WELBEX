@@ -1,0 +1,11 @@
+.cards,
+.cards__wrapper,
+.cards__title,
+.cards__caption {
+  //*@include visually-hidden;
+  display: none;
+  @include desktop {
+    //position: relative;
+    display: block;
+  }
+}

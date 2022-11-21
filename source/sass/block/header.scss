@@ -1,0 +1,11 @@
+.header {
+  //padding: 0 16px;
+}
+
+.header__logo {
+  display: none;
+
+  @include desktop{
+    display: block;
+  }
+}
