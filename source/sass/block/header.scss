@@ -1,16 +1,17 @@
 .header {
-  @include desktop{
+  position: relative;
+
+  @include desktop {
     display: flex;
     padding: 14px 0 4px;
     margin: 0 auto;
-
   }
 }
 
 .header__logo {
   display: none;
 
-  @include desktop{
+  @include desktop {
     display: block;
   }
 }
@@ -21,27 +22,23 @@
   }
 }
 
-.header {
-  position: relative;
-}
-
 .header::before {
   position: absolute;
   content: "";
   width: 260px;
   height: 260px;
-  background-color: #833AB4;
+  background-color: #833ab4;
   border-radius: 50%;
   opacity: 0.05;
   top: 270%;
   left: 80%;
-  box-shadow: 0 0 30px 30px #833AB4;
+  box-shadow: 0 0 30px 30px #833ab4;
 
   @include desktop {
     width: 260px;
     height: 260px;
     opacity: 0.15;
-    box-shadow: 0 0 50px 50px #833AB4;
+    box-shadow: 0 0 50px 50px #833ab4;
     top: -202px;
     left: 51%;
     transform: translateX(-50%);

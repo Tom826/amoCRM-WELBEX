@@ -1,5 +1,5 @@
 .section__title {
-  font-family: 'Inter', 'Arial', sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -11,7 +11,7 @@
 
   @include desktop {
     font-size: 14px;
-    line-height:  17px;
+    line-height: 17px;
   }
 }
 
@@ -24,7 +24,7 @@
     column-count: 2;
     column-width: 120px;
     column-gap: 32px;
-  };
+  }
 }
 
 .section__item:not(:last-child) {
@@ -40,7 +40,7 @@
 
   &--desktop {
     display: none;
-  };
+  }
 
   @include desktop {
     font-size: 16px;
@@ -49,9 +49,10 @@
     &--mob {
       display: none;
     }
+
     &--desktop {
       display: block;
-    };
+    }
   }
 }
 

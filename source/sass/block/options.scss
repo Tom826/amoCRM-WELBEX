@@ -1,7 +1,7 @@
 .options {
   padding: 0;
   list-style-type: none;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -22,7 +22,7 @@
 
 .options__item::before {
   content: "";
-  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+  background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
   position: absolute;
   width: 10px;
   height: 1px;

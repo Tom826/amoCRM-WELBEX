@@ -18,14 +18,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 175%);
-  -webkit-background-clip: text;
+  background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 175%);
+  //-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 
   @include desktop {
-    text-transform: uppercase
+    text-transform: uppercase;
   }
 }
 
