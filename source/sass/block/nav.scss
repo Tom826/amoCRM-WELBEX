@@ -14,6 +14,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
+  position: relative;
 
   @include desktop {
     gap: 0 16px;
@@ -44,6 +45,7 @@
 
 .nav__link {
   color: inherit;
+  cursor: pointer;
   text-decoration: none;
   font-size: 12px;
   line-height: 15px;
@@ -56,5 +58,20 @@
     font-size: 16px;
     line-height: 19px;
     text-transform: none;
+  }
+}
+
+.nav__list::after {
+  @include desktop {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+    top: 22px;
+    left: 182px;
+    width: 83px;
+    height: 83px;
   }
 }

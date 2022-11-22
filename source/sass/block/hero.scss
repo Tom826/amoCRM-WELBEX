@@ -46,3 +46,29 @@
     width: 276px;
   }
 }
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  width: 210px;
+  height: 210px;
+  background-color: #961A1A;
+  border-radius: 50%;
+  opacity: 0.05;
+  top: 100%;
+  left: -30%;
+  box-shadow: 0 0 30px 30px #961A1A;
+
+  @include desktop {
+    width: 310px;
+    height: 310px;
+    opacity: 0.15;
+    top: 50px;
+    left: -63%;
+    box-shadow: 0 0 50px 50px #961A1A;
+  }
+}
